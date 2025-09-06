@@ -14,14 +14,16 @@ macro_rules! Record {
 
 
 
-Record!(Point,u32,(x,y),{
-    pub fn sum(self) -> u32 {
-        self.x + self.y
-    },
-    pub fn dif(self) -> u32 {
-        self.x - self.y
+Record!( 
+    Point,u32,(x,y),{
+        pub fn sum(self) -> u32 {
+            self.x + self.y
+        },
+        pub fn dif(self) -> u32 {
+            self.x - self.y
+        }
     }
-});
+);
 
 fn main(){
     
